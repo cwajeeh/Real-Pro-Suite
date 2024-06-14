@@ -76,7 +76,7 @@ const SignIn = () => {
                   onChange={onChange}
                   value={data.email}
                   placeholder="Email"
-                  className={inputStyle}
+                  
                 />
                 <div className="relative mb-10">
                   <button
@@ -96,7 +96,7 @@ const SignIn = () => {
                     value={data.password}
                     name="password"
                     placeholder="Password"
-                    className={inputStyle}
+                    
                   />
                 </div>
               </div>

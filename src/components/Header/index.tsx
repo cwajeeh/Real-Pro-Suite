@@ -60,19 +60,27 @@ const Header = (props: {
             </button>
             {/* <!-- Hamburger Toggle BTN --> */}
 
-            <Link className="block flex-shrink-0 lg:hidden" to="/">
+            {/* <Link className="block flex-shrink-0 lg:hidden" to="/">
               <img src={LogoIcon} alt="Logo" />
+            </Link> */}
+
+                        {/* Logo for small screens */}
+                        <Link className="w-16 sm:hidden block" to="/">
+              <img src={AlterLogo} alt="Logo" className="object-fill" />
+            </Link>
+
+            <Link className="w-52 max-sm:hidden block" to="/">
+              <img src={LogoIcon} alt="Logo" className="w-full" />
             </Link>
           </div>
         ) : (
           <div>
-            {/* Logo for small screens */}
-            <Link className="w-32 sm:hidden block" to="/">
+ {/* Logo for small screens */}
+ <Link className="w-16 sm:hidden block" to="/">
               <img src={AlterLogo} alt="Logo" className="object-fill" />
             </Link>
 
-            {/* Logo for medium and large screens */}
-            <Link className="w-72 max-sm:hidden block" to="/">
+            <Link className="w-52 max-sm:hidden block" to="/">
               <img src={LogoIcon} alt="Logo" className="w-full" />
             </Link>
           </div>
